@@ -39,7 +39,7 @@ const TodoList = () => {
      * useRef gives us a mutable value that persists across renders
      * without triggering a re-render when changed — perfect for counters/IDs.
      */
-    const nextId = useRef(INITIAL_TODOS.length + 1);
+    const nextId = useRef(INITIAL_TODOS.length);
 
     /**
      * Prepend a new todo to the START of the array.
